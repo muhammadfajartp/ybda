@@ -1,0 +1,48 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/_mixins";
+
+.headerAccount {
+  .btnSearch {
+    height: 28px;
+    width: 38px;
+    background-color: $secondary;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .btnLoginHeader {
+    @include button-style($padding: 8px 14px);
+    @include border-style(none, 6px);
+    height: 40px;
+    margin: 0px 6px;
+
+    &:hover {
+      box-shadow: 0 5px 15px $primary;
+    }
+  }
+}
+
+.linkStyle {
+  &:hover {
+    color: white;
+    font-weight: 500;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    position: relative;
+    top: 4px;
+    height: 3px;
+    width: 10px;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover::after {
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background: $primary;
+  }
+
+}

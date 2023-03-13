@@ -1,0 +1,55 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+
+
+.sidebarLayout {
+  display: flex;
+  height: 100vh;
+
+
+  .sidebarStyle {
+    @include flex-style(column, flex-start, center);
+    background-color: $dark;
+    width: 150px;;
+    height: 100%;
+
+    .sidebarLogo {
+      width: 50%;
+      height: auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 0 6px;
+      @include flex-style(column, center, center);
+      >img{
+        height: 100px;
+        width: auto;
+      }
+    }
+
+    .sidebarMenu {
+      height: 90%;
+      width: 100%;
+      text-decoration: none;
+      @include flex-style(column, flex-start, flex-start);
+      .nonPages {
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+        transition: all 1000ms ease-in;
+        color: $secondary;
+        @include flex-style(row, flex-start, center);
+        text-decoration: none;
+        
+      }
+
+      .activePages {
+        color: white;
+        background-color: $primary;
+        transition: all 1000ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      }
+
+    }
+  }
+
+}

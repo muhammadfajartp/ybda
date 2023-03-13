@@ -1,0 +1,41 @@
+/*===== Colosrs =====//*/
+/*===== Colosrs =====//*/
+.headerAccount .btnSearch {
+  height: 28px;
+  width: 38px;
+  background-color: #565655;
+  border: none;
+  border-radius: 50px;
+}
+.headerAccount .btnLoginHeader {
+  background-color: #F70051;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  margin: 0px 6px;
+}
+.headerAccount .btnLoginHeader:hover {
+  box-shadow: 0 5px 15px #F70051;
+}
+
+.linkStyle:hover {
+  color: white;
+  font-weight: 500;
+}
+.linkStyle::after {
+  display: block;
+  content: "";
+  position: relative;
+  top: 4px;
+  height: 3px;
+  width: 10px;
+  transition: all 0.2s ease-out;
+}
+.linkStyle:hover::after {
+  position: relative;
+  top: 1px;
+  width: 100%;
+  background: #F70051;
+}

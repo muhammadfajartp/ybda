@@ -1,0 +1,22 @@
+/*===== Colosrs =====//*/
+$primary: #0077b6;
+$secondary: #565655;
+$info: #EC6300;
+$dark: #232323;
+$black: #0E0E0E;
+$light: #E2E2E2;
+$gray-700: #878687;
+$gray-800: #2e2e2e;
+
+$theme: (
+  "light" : $light,
+  "dark" : $dark
+);
+
+$form-check-input-bg: $secondary ;
+
+$carousel-dark-indicator-active-bg: $primary;
+$carousel-dark-caption-color: $black;
+$carousel-dark-control-icon-filter: invert(1) grayscale(100);
+
+$form-range-track-bg: $secondary;

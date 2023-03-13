@@ -1,0 +1,35 @@
+@import "variables";
+
+
+@mixin button-style ($bgColor: $primary, $color: white, $padding: 5px 10px) {
+  background-color: $bgColor ;
+  color: $color;
+  padding: $padding;
+}
+
+@mixin flex-style ($direction: column, $justfy: center, $alignItems: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justfy;
+  align-items: $alignItems;
+}
+
+@mixin container-style ($height: 100vh, $width: auto, $bg:white) {
+  height: $height;
+  width: $width;
+  background-color: $bg;
+}
+
+@mixin border-style ($border, $radius) {
+  border: $border;
+  border-radius: $radius;
+}
+
+@mixin row-style ($height: 100%, $minHeight: 100vh) {
+  height: $height;
+  min-height: $minHeight;
+}
+
+@mixin box-shadow-style ($value: $primary) {
+  box-shadow: 10px -0px 50px $value;
+}
